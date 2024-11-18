@@ -27,6 +27,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 24, 
+    color: 'black',
+    fontWeight: 'bold', 
+    textAlign: 'center', 
+    marginTop: 5, 
+  },
+});
 
 
 export default class App extends React.Component
@@ -35,8 +44,8 @@ export default class App extends React.Component
   {
     return(
     <>
-      <Text>Issue Tracker</Text>
-      <IssueList/>
+        <Text style={styles.title}>Issue Tracker</Text>
+        <IssueList/>
     </>);
 
   }
